@@ -109,20 +109,14 @@ const spanProyectos = document.querySelector("#contador-proyectos");
 const proyectos = document.querySelectorAll("#proyectos-list");
 spanProyectos.innerHTML = proyectos.length;
 
-const boton = document.getElementById("descargar-cv-link");
 
-boton.addEventListener("click", (e) => {
-  e.preventDefault(); // Prevenir comportamiento por defecto
-  
-  const cvUrl = "https://elianarmendarizz.github.io/Portafolio-Elian-Armendariz/src/assets/cv_elian_armendariz.pdf";
-  window.open(cvUrl, "_blank");
-});
 
 const boton2 = document.getElementById("descarga-cv");
 boton2.addEventListener("click", () => {
   const cvUrl = "https://elianarmendarizz.github.io/Portafolio-Elian-Armendariz/src/assets/cv_elian_armendariz.pdf";
   window.open(cvUrl, "_blank");
 });
+
 
 
 
