@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en" class="overflow-x-hidden">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./src/css/output.css" rel="stylesheet" />
+    <!-- iconos -->
+    <link
+      rel="stylesheet"
+      href="https://sets.hugeicons.com/YOUR-SET-ID.css"
+      crossorigin="anonymous"
+    />
+    <!-- icono de la pagina -->
+    <link rel="icon" type="image/png" href="./src/assets/griego3.png" />
+    <title>PORTAFOLIO ELIAN ARMENDARIZ</title>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+
+  <body class="bg-[#000000] overflow-x-hidden">
+    <div class="opacity-20 z-[-100]">
+      <div class="top-90 rotate-12 right-[-40%] md:right-2 absolute mx-auto">
+        <img
+          class="w-xl animate__animated animate__bounceInDown"
+          src="./src/assets/griego3.png"
+          alt=""
+        />
+      </div>
+      <div
+        class="left-[-40%] right-0 top-90 rotate-[-30%] md:left-0 absolute mx-auto"
+      >
+        <img
+          class="w-xl animate__animated animate__bounceInDown"
+          src="./src/assets/apolo.png"
+          alt=""
+        />
+      </div>
+      <div
+        class="left-[-40%] right-0 top-90 rotate-[-30%] md:left-0 absolute mx-auto"
+      >
+        <img
+          class="w-80 animate__animated animate__bounceInDown"
+          src="./src/assets/apolo2.png"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <header
+      class="fixed top-2 z-10 flex items-center justify-center w-full mx-auto mt-2"
+    >
+      <nav
+        id="header"
+        class="transition-colors duration-250 flex px-3 text-sm font-medium rounded-full text-white justify-center items-center"
+      >
+        <ul class="flex gap-7">
+          <li>
+            <a
+              class="relative block px-2 py-2 transition hover:text-[#fd6f00]"
+              href="#sobremi"
+              >Sobre mí</a
+            >
+          </li>
+          <li>
+            <a
+              class="relative block px-2 py-2 transition hover:text-[#fd6f00]"
+              href="#proyectos"
+              >Proyectos</a
+            >
+          </li>
+          <li>
+            <a
+              class="relative block px-2 py-2 transition hover:text-[#fd6f00]"
+              href="#contacto"
+              >Contacto</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div
+        class="h-0 w-[20rem] md:w-[30rem] absolute top-[20%] right-0 shadow-[0_0_700px_15px_white] -rotate-[30deg] -z-10 animate-fade animate-delay-100 animate-ease-linear"
+      ></div>
+    </header>
+
+    <main>
+      <section
+        class="py-16 md:py-40 md:w-3xl w-full mx-auto container animate__animated animate__fadeInLeftBig"
+      >
+        <div class="flex flex-col items-center justify-center md:items-start">
+          <h3 class="text-white text-[16px]">Hola soy</h3>
+          <h2 class="text-white text-2xl">Elian Armendariz</h2>
+          <h1
+            class="font-bold text-4xl md:text-6xl bg-gradient-to-r from-[#984300] via-[#FD6F00] to-[#CA5900] bg-clip-text text-transparent text-center"
+          >
+            Frontend Developer
+          </h1>
+        </div>
+        <div>
+          <div
+            id="contacto"
+            class="flex flex-row justify-center gap-10 mt-10 md:items-start md:justify-start"
+          >
+            <a
+              href="https://github.com/ElianArmendarizz"
+              target="_blank"
+              class="text-white flex flex-col items-center justify-center"
+              ><img
+                src="./src/assets/github.svg"
+                class="w-12 lg:w-14"
+                alt="Github"
+              />Github</a
+            >
+            <a
+              href="https://www.linkedin.com/in/elian-shair-armendariz-puch-ingenieroensistemas"
+              target="_blank"
+              class="text-white flex flex-col items-center justify-center"
+              ><img
+                src="./src/assets/linkedin.svg"
+                class="w-12 lg:w-14"
+                alt="LinkedIn"
+              />LinkedIn</a
+            >
+          </div>
+        </div>
+        <div
+          class="flex justify-center mt-10 gap-7 md:items-start md:justify-start"
+        >
+          <a
+            href="https://wa.me/+529811682698?text=Hola%20quiero%20contactarte"
+            target="_blank"
+          >
+            <button
+              class="border-2 border-[#959595] text-[#959595] hover:bg-[#FD6F00] hover:border-transparent hover:text-white py-2 px-4 rounded-lg cursor-pointer transition-all duration-300 ease-in-out"
+            >
+              Contáctame
+            </button>
+          </a>
+          <a href="#" id="descargar-cv-link">
+            <button
+              id="descargar-cv"
+              class="border-2 border-[#959595] text-[#959595] hover:bg-[#FD6F00] hover:border-transparent hover:text-white py-2 px-4 rounded-lg cursor-pointer transition-all duration-300 ease-in-out"
+            >
+              Descargar CV
+            </button>
+          </a>
+        </div>
+
+        <div
+          class="py-20 w-40 mx-auto flex items-center justify-center md:items-start md:mx-0 md:justify-start md:w-2xl"
+        >
+          <div
+            class="flex flex-wrap items-center justify-center border-r border-l border-white p-4 w-full hover:bg-[#FD6F00] transition-all ease-in-out gap-4"
+          >
+            <p class="text-white text-2xl">Proyectos:</p>
+            <span id="contador-proyectos" class="text-white text-2xl">0</span>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="sobremi"
+        class="py-16 md:py-5 md:w-6xl w-full mx-auto container"
+      >
+        <div
+          id="sobremi"
+          class="flex flex-col justify-center items-center text-center opacity-0"
+          animacion-sobre-mi
+        >
+          <h2 class="text-white font-bold text-4xl">Sobre mí</h2>
+          <p class="text-white">
+            Desarrollo Front-End centrado en la interfaz y experiencia de
+            usuario
+          </p>
+        </div>
+
+        <div
+          class="py-10 flex-col flex items-center justify-center md:flex-row gap-5 mx-auto"
+        >
+          <img
+            class="w-sm md:w-1/2"
+            src="./src/assets/mi-foto.png"
+            alt="foto-Elian-Armendariz"
+          />
+          <div
+            class="flex flex-col items-center justify-center gap-10 md:items-start mx-5"
+          >
+            <p class="text-white text-left opacity-0 mb-1.5" parrado-animado>
+              Soy ingeniero en sistemas computacionales especializado en
+              desarrollo Frontend, con experiencia en la creación de interfaces
+              web funcionales, interactivas y conectadas a bases de datos. He
+              trabajado con tecnologías como HTML, CSS, JavaScript, Tailwind
+              CSS, MySQL y XAMPP, desarrollando proyectos completos que incluyen
+              login de usuarios, catálogos filtrables, carritos de compra y
+              manejo de datos en entornos locales. Me enfoco en escribir código
+              limpio, estructurado y orientado a ofrecer una experiencia de
+              usuario óptima.
+            </p>
+
+            <p class="text-white text-left opacity-0 mb-1.5" parrado-animado>
+              Además, cuento con conocimientos en Python aplicados a proyectos
+              interactivos que combinan procesamiento de audio, visión por
+              computadora y visuales en tiempo real, demostrando versatilidad y
+              capacidad para integrar lo técnico con lo creativo. También manejo
+              de forma básica Git y GitHub, incorporándolos progresivamente en
+              mi flujo de trabajo para mejorar el control de versiones y la
+              colaboración en proyectos.
+            </p>
+
+            <button
+              id="descarga-cv"
+              class="border-2 border-[#959595] text-[#959595] hover:bg-[#FD6F00] hover:border-transparent hover:text-white py-2 px-4 rounded-lg cursor-pointer transition-all duration-300 ease-in-out"
+            >
+              Descargar CV
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="py-10 flex flex-col items-center justify-center gap-5 md:justify-start mx-auto"
+        >
+          <h2 class="text-white font-bold text-4xl">Habilidades</h2>
+
+          <div class="flex flex-col md:flex-row gap-5 md:gap-12">
+            <div class="flex flex-col items-center opacity-0" animated-skill>
+              <div
+                class="w-20 h-20 rounded-full border-4 border-transparent hover:border-[#FD6F00] overflow-hidden transition-transform duration-300 hover:scale-110 flex items-center justify-center"
+              >
+                <img src="/src/assets/html.svg" alt="HTML" class="w-10" />
+              </div>
+              <p class="text-white">HTML</p>
+            </div>
+
+            <div class="flex flex-col items-center opacity-0" animated-skill>
+              <div
+                class="w-20 h-20 rounded-full border-4 border-transparent hover:border-[#FD6F00] overflow-hidden transition-transform duration-300 hover:scale-110 flex items-center justify-center"
+              >
+                <img src="/src/assets/css.svg" alt="CSS" class="w-10" />
+              </div>
+              <p class="text-white">CSS</p>
+            </div>
+
+            <div class="flex flex-col items-center opacity-0" animated-skill>
+              <div
+                class="w-20 h-20 rounded-full border-4 border-transparent hover:border-[#FD6F00] overflow-hidden transition-transform duration-300 hover:scale-110 flex items-center justify-center"
+              >
+                <img src="/src/assets/js.svg" alt="JavaScript" class="w-10" />
+              </div>
+              <p class="text-white">JavaScript</p>
+            </div>
+
+            <div class="flex flex-col items-center opacity-0" animated-skill>
+              <div
+                class="w-20 h-20 rounded-full border-4 border-transparent hover:border-[#FD6F00] overflow-hidden transition-transform duration-300 hover:scale-110 flex items-center justify-center"
+              >
+                <img
+                  src="/src/assets/tailwind.svg"
+                  alt="Tailwind CSS"
+                  class="w-10"
+                />
+              </div>
+              <p class="text-white">Tailwind CSS</p>
+            </div>
+
+            <div class="flex flex-col items-center opacity-0" animated-skill>
+              <div
+                class="w-20 h-20 rounded-full border-4 border-transparent hover:border-[#FD6F00] overflow-hidden transition-transform duration-300 hover:scale-110 flex items-center justify-center"
+              >
+                <img src="/src/assets/git.svg" alt="Git" class="w-10" />
+              </div>
+              <p class="text-white">Git</p>
+            </div>
+
+            <div class="flex flex-col items-center opacity-0" animated-skill>
+              <div
+                class="w-20 h-20 rounded-full border-4 border-transparent hover:border-[#FD6F00] overflow-hidden transition-transform duration-300 hover:scale-110 flex items-center justify-center"
+              >
+                <img src="/src/assets/PYTHON.svg" alt="Git" class="w-10" />
+              </div>
+              <p class="text-white">Python</p>
+            </div>
+
+            <div class="flex flex-col items-center opacity-0" animated-skill>
+              <div
+                class="w-20 h-20 rounded-full border-4 border-transparent hover:border-[#FD6F00] overflow-hidden transition-transform duration-300 hover:scale-110 flex items-center justify-center"
+              >
+                <img src="/src/assets/MYSQL.svg" alt="Git" class="w-10" />
+              </div>
+              <p class="text-white">MYSQL</p>
+            </div>
+
+            <div class="flex flex-col items-center opacity-0" animated-skill>
+              <div
+                class="w-20 h-20 rounded-full border-4 border-transparent hover:border-[#FD6F00] overflow-hidden transition-transform duration-300 hover:scale-110 flex items-center justify-center"
+              >
+                <img src="/src/assets/github.svg" alt="GitHub" class="w-10" />
+              </div>
+              <p class="text-white">GitHub</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="proyectos" class="py-14 md:py-36 w-full mx-auto container">
+        <div class="flex flex-col items-center">
+          <h2 class="text-white font-bold text-4xl">Proyectos</h2>
+          <p class="text-white">
+            Aquí hay algunos de mis proyectos más recientes:
+          </p>
+
+          <div class="py-6 flex flex-wrap justify-center gap-5">
+            <div
+              id="proyectos-list"
+              class="w-[320px] p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700"
+            >
+              <h5
+                class="mb-2 text-2xl font-bold text-[#000000] dark:text-white"
+              >
+                Sistema de reservas de restaurantes
+              </h5>
+              <img
+                class="w-full mb-3"
+                src="./src/screen/sistema-reservas-restaurantes.png"
+                alt=""
+              />
+              <p class="mb-1 text-[#959595] dark:text-gray-400">
+                Sistema web completo para administración y reservas de
+                restaurantes. Permite a los usuarios explorar establecimientos
+                cercanos, consultar menús, gestionar favoritos y realizar
+                reservaciones de manera intuitiva, con diseño responsive,
+                sistema de reseñas y autenticación segura.
+              </p>
+              <p class="mb-3 text-[#959595] dark:text-gray-400">
+                <i class="font-bold">Tecnologías utilizadas:</i><br />
+                HTML, CSS, JavaScript, Tailwind
+              </p>
+
+              <a
+                href="https://github.com/ElianArmendarizz/sistema-reservas-restaurantes"
+                target="_blank"
+                class="inline-flex items-center px-3 py-2 text-sm font-medium text-white bg-[#000000] rounded-lg hover:bg-[#222222] focus:ring-4 focus:outline-none focus:ring-[#000000] bottom-0"
+              >
+                Código
+                <svg
+                  class="w-5 h-5 ms-2"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M12 0C5.372 0 0 5.372 0 12c0 5.303 3.438 9.8 8.205 11.387.6.11.82-.26.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.73.083-.73 1.205.085 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.305.76-1.605-2.665-.304-5.466-1.332-5.466-5.932 0-1.31.467-2.382 1.235-3.222-.123-.303-.535-1.523.117-3.176 0 0 1.008-.323 3.3 1.23a11.47 11.47 0 0 1 3-.405c1.02.005 2.047.138 3 .405 2.29-1.553 3.297-1.23 3.297-1.23.653 1.653.242 2.873.12 3.176.77.84 1.233 1.912 1.233 3.222 0 4.61-2.804 5.625-5.475 5.922.43.37.813 1.096.813 2.21 0 1.595-.015 2.877-.015 3.267 0 .32.216.694.825.576C20.565 21.796 24 17.303 24 12c0-6.628-5.372-12-12-12z"
+                  />
+                </svg>
+              </a>
+            </div>
+
+            <div
+              id="proyectos-list"
+              class="w-[320px] p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700"
+            >
+              <h5
+                class="mb-2 text-2xl font-bold text-[#000000] dark:text-white"
+              >
+                Gestor de rutinas de entrenamiento
+              </h5>
+              <img class="w-full mb-3" src="./src/screen/AppGym.png" alt="" />
+              <p class="mb-1 text-[#959595] dark:text-gray-400">
+                Una aplicación web y móvil para gestionar rutinas de
+                entrenamiento en gimnasio, con acceso para múltiples usuarios.
+              </p>
+              <p class="mb-3 text-[#959595] dark:text-gray-400">
+                <i class="font-bold">Tecnologías utilizadas:</i><br />
+                HTML5, CSS3, JavaScript, TailwindCSS, PHP, MySQL, Apache Cordova
+              </p>
+              <a
+                href="https://github.com/ElianArmendarizz/Gym-app-web-Cordoba"
+                target="_blank"
+                class="inline-flex items-center px-3 py-2 text-sm font-medium text-white bg-[#000000] rounded-lg hover:bg-[#222222] focus:ring-4 focus:outline-none focus:ring-[#000000]"
+              >
+                Código
+                <svg
+                  class="w-5 h-5 ms-2"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M12 0C5.372 0 0 5.372 0 12c0 5.303 3.438 9.8 8.205 11.387.6.11.82-.26.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.73.083-.73 1.205.085 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.305.76-1.605-2.665-.304-5.466-1.332-5.466-5.932 0-1.31.467-2.382 1.235-3.222-.123-.303-.535-1.523.117-3.176 0 0 1.008-.323 3.3 1.23a11.47 11.47 0 0 1 3-.405c1.02.005 2.047.138 3 .405 2.29-1.553 3.297-1.23 3.297-1.23.653 1.653.242 2.873.12 3.176.77.84 1.233 1.912 1.233 3.222 0 4.61-2.804 5.625-5.475 5.922.43.37.813 1.096.813 2.21 0 1.595-.015 2.877-.015 3.267 0 .32.216.694.825.576C20.565 21.796 24 17.303 24 12c0-6.628-5.372-12-12-12z"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div
+              id="proyectos-list"
+              class="w-[320px] p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700"
+            >
+              <h5
+                class="mb-2 text-2xl font-bold text-[#000000] dark:text-white"
+              >
+                TaskMaster - Gestor de Tareaso
+              </h5>
+              <img
+                class="w-full mb-3"
+                src="./src/screen/todo-list.png"
+                alt=""
+              />
+              <p class="mb-1 text-[#959595] dark:text-gray-400">
+                Una aplicación web responsiva para gestionar tus tareas diarias,
+                desarrollada con HTML5, CSS3 y JavaScript vanilla.
+              </p>
+              <p class="mb-3 text-[#959595] dark:text-gray-400">
+                <i>Tecnologías utilizadas: HTML5, CSS3, JavaScript</i>
+              </p>
+
+              <a
+                href=" https://elianarmendarizz.github.io/Todo-List/"
+                target="_blank"
+                class="inline-flex items-center px-3 py-2 text-sm font-medium text-white bg-[#FD6F00] rounded-lg hover:bg-[#e65c00] focus:ring-4 focus:outline-none focus:ring-[#FD6F00] mb-2"
+              >
+                Preview
+                <svg
+                  class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                  />
+                </svg>
+              </a>
+
+              <a
+                href="https://github.com/ElianArmendarizz/Todo-List"
+                target="_blank"
+                class="inline-flex items-center px-3 py-2 text-sm font-medium text-white bg-[#000000] rounded-lg hover:bg-[#222222] focus:ring-4 focus:outline-none focus:ring-[#000000]"
+              >
+                Código
+                <svg
+                  class="w-5 h-5 ms-2"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M12 0C5.372 0 0 5.372 0 12c0 5.303 3.438 9.8 8.205 11.387.6.11.82-.26.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.73.083-.73 1.205.085 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.305.76-1.605-2.665-.304-5.466-1.332-5.466-5.932 0-1.31.467-2.382 1.235-3.222-.123-.303-.535-1.523.117-3.176 0 0 1.008-.323 3.3 1.23a11.47 11.47 0 0 1 3-.405c1.02.005 2.047.138 3 .405 2.29-1.553 3.297-1.23 3.297-1.23.653 1.653.242 2.873.12 3.176.77.84 1.233 1.912 1.233 3.222 0 4.61-2.804 5.625-5.475 5.922.43.37.813 1.096.813 2.21 0 1.595-.015 2.877-.015 3.267 0 .32.216.694.825.576C20.565 21.796 24 17.303 24 12c0-6.628-5.372-12-12-12z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer></footer>
+
+    <script src="./src/js/index.js"></script>
+  </body>
+</html>
