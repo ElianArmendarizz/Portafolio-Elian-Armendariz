@@ -124,7 +124,7 @@ boton.addEventListener("click", () => {
 
 const boton2 = document.getElementById("descarga-cv");
 boton2.addEventListener("click", () => {
-  const cvUrl = "./assets/cv_elian_armendariz.pdf";
+  const cvUrl = "../assets/cv_elian_armendariz.pdf";
 
   const link = document.createElement("a");
   link.href = cvUrl;
@@ -133,6 +133,7 @@ boton2.addEventListener("click", () => {
   link.click();
   document.body.removeChild(link);
 });
+
 
 
 
