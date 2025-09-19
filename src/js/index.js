@@ -112,7 +112,7 @@ spanProyectos.innerHTML = proyectos.length;
 const boton = document.getElementById("descargar-cv-link");
 
 boton.addEventListener("click", () => {
-  const cvUrl = "../src/assets/cv_elian_armendariz.pdf";
+  const cvUrl = "../assets/cv_elian_armendariz.pdf";
 
   const link = document.createElement("a");
   link.href = cvUrl;
@@ -133,6 +133,7 @@ boton2.addEventListener("click", () => {
   link.click();
   document.body.removeChild(link);
 });
+
 
 
 
