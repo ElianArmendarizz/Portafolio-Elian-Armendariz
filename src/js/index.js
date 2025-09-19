@@ -111,24 +111,19 @@ spanProyectos.innerHTML = proyectos.length;
 
 const boton = document.getElementById("descargar-cv-link");
 
-boton.addEventListener("click", () => {
-  const cvUrl = "https://raw.githubusercontent.com/elianarmendarizz/Portafolio-Elian-Armendariz/main/src/assets/cv_elian_armendariz.pdf";
-
-  const link = document.createElement("a");
-  link.href = cvUrl;
-  link.download = "CV-Elian-Armendariz.pdf";
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
+boton.addEventListener("click", (e) => {
+  e.preventDefault(); // Prevenir comportamiento por defecto
+  
+  const cvUrl = "https://elianarmendarizz.github.io/Portafolio-Elian-Armendariz/src/assets/cv_elian_armendariz.pdf";
+  window.open(cvUrl, "_blank");
 });
 
 const boton2 = document.getElementById("descarga-cv");
 boton2.addEventListener("click", () => {
   const cvUrl = "https://elianarmendarizz.github.io/Portafolio-Elian-Armendariz/src/assets/cv_elian_armendariz.pdf";
-  
-  // Abrir en nueva pestaña para que el usuario pueda descargarlo manualmente
   window.open(cvUrl, "_blank");
 });
+
 
 
 
