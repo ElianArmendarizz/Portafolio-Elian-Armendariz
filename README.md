@@ -24,7 +24,7 @@
 ## 🚀 Deploy
 
 Puedes ver el portafolio en línea aquí:  
-👉 [Mi Portafolio](https://elianarmendarizz.github.io/Portafolio-Elian-Armendariz.github.io/)
+👉 [Mi Portafolio](https://elianarmendarizz.github.io/Portafolio-Elian-Armendariz/)
 
 ---
 Portafolio-Elian-Armendariz.
